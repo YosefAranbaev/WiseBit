@@ -1,4 +1,5 @@
-const Categories = new Schema({
+const {Schema, model} = require('mongoose');
+const categorySchema = new Schema({
     uid: String,
     CategoryName: String,
     DesiredBudget: Number,

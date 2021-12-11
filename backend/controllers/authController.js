@@ -1,13 +1,3 @@
-const users = require('../models/users.json');
-
-const findUser = async (email, password) => {
-    const user = await users.find(user => (user.email === email)&&(user.password === password));
-    if(user) {
-        return user;
-    } else {
-        return null;
-    }
-};
 
 exports.authController = {
     loginUser(req, res) {
